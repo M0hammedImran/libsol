@@ -1,14 +1,14 @@
 <header>
   <div class="logo">
-    <a href="#">{{ title }}</a>
+    <a routerLink="/">{{ title }}</a>
   </div>
-  <div class="nav-container">
+  <nav>
     <ul class="nav">
-      <li><a href="/home">Home </a></li>
-      <li><a href="/department">Department</a></li>
-      <li><a href="/about">About Us</a></li>
+      <li><a routerLink="/">Home </a></li>
+      <li><a routerLink="/department">Department</a></li>
+      <li><a routerLink="/about">About Us</a></li>
     </ul>
-  </div>
+  </nav>
 </header>
 
 <router-outlet></router-outlet>
