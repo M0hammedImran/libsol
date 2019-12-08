@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
-
 * {
   margin: 0%;
   padding: 0%;
@@ -7,17 +5,17 @@
 }
 
 header {
+  /* background-color: rgb(226, 226, 226); */
   min-height: 9vh;
   width: 100%;
+  padding-left: 2rem;
+  padding-right: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 header .logo {
-  position: absolute;
-  left: 40px;
-  top: 15px;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -31,10 +29,6 @@ header a {
 }
 
 .nav {
-  position: absolute;
-  right: 0px;
-  top: 25px;
-  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +41,6 @@ ul li a {
   text-decoration: none;
   color: black;
 }
-
-a:hover {
-  color: red;
+.active {
+  font-weight: bold;
 }
