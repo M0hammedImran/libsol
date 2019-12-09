@@ -1,6 +1,46 @@
 <div class="main-container">
-  <input type="text" placeholder="Name" name="name" id="name" />
-  <input type="password" placeholder="Password" name="password" id="password" />
-  <button type="submit">Submit</button>
-  <button type="reset">Cancel</button>
+  <img src="assets/images/Image&Text.png" alt="library image" />
+  <div class="form-container">
+    <p id="text">User Login</p>
+    <form>
+      <div class="text-container">
+        <label for="userName">Username: </label>
+        <input
+          autofocus
+          required
+          ngModel
+          name="userName"
+          #userName="ngModel"
+          id="userName"
+          type="text"
+          class="text username"
+          placeholder="Username"
+        />
+      </div>
+      <div class="text-container">
+        <label for="password">Password: </label>
+        <input
+          autocomplete="on"
+          required
+          minlength="6"
+          ngModel
+          name="password"
+          #password="ngModel"
+          id="password"
+          type="password"
+          placeholder="Password"
+          class="text password"
+          name="password"
+          id="password"
+        />
+      </div>
+      <div class="btn-container">
+        <button type="submit" class="btn login">Login</button>
+        <button [routerLink]="['']" class="btn cancel">Cancel</button>
+      </div>
+    </form>
+    <p class="acc-query">
+      Don't have an Account? <a routerLink="/sign-up">Sign-in</a>
+    </p>
+  </div>
 </div>
